@@ -1,0 +1,32 @@
+{
+  "name": "js-promises-testing",
+  "version": "0.0.1",
+  "description": "Example of JS Promises testing",
+  "engines": {
+    "node": "5"
+  },
+  "scripts": {
+    "all": "npm run mocha && npm run tape && npm run ava",
+    "mocha": "mocha test/mocha.js --compilers js:babel/register",
+    "tape": "babel-tape-runner test/tape.js",
+    "ava": "ava test/ava.js"
+  },
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/shakacode/js-promises-testing"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "ava": "^0.7.0",
+    "babel": "^5.8.34",
+    "babel-tape-runner": "^1.3.0",
+    "blue-tape": "^0.1.11",
+    "chai": "^3.4.1",
+    "chai-as-promised": "^5.1.0",
+    "mocha": "^2.3.4",
+    "sinon": "^1.17.2",
+    "sinon-as-promised": "^4.0.0",
+    "tape": "^4.2.2"
+  }
+}
